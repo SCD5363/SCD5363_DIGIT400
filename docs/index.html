@@ -1,17 +1,14 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Sam Deeter Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
-        <link rel="sidebar" type="text/js" href="sidebar"/>
-    <body>
-        {{ content }}
-            {% include sidebar.html %}
-        <header>
-            <h1>Sam Deeter Portfolio</h1>
-            <h4>By: Sam Deeter</h4>
-        </header>
-        
-           
-    </body>
-</html>
+---
+layout: default
+title: Home
+url: "https://newtfire.github.io/jekyllSetup/index.html"
+---
+<section>
+    <p>Welcome to my site.</p>
+    
+   {% include mirrornewts.html %}
+   
+   
+    <p>We are at <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend
+        College</a>.</p>
+</section>

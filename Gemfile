@@ -1,22 +1,23 @@
-# frozen_string_literal: true
-
-source "https://rubygems.org"
-
-# gem "rails"
-
-gem "jekyll", "~> 4.2"
-
-gem "webrick", "~> 1.7"
-
-gem "tzinfo-data"
-
-gem "wdm"
-
+source 'https://rubygems.org'
 group :jekyll_plugins do
-  gem 'jekyll-sitemap'
-  gem 'jekyll-seo-tag'
-  gem 'jekyll-feed'
+    gem 'wdm', '>= 0.1.0'
+    gem 'jekyll'
+    gem 'jekyll-archives'
+    gem 'jekyll-diagrams'
+    gem 'jekyll-email-protect'
+    gem 'jekyll-feed'
+    gem 'jekyll-imagemagick'
+    gem 'jekyll-minifier'
+    gem 'jekyll-paginate-v2'
+    gem 'jekyll-scholar'
+    gem 'jekyll-sitemap'
+    gem 'jekyll-target-blank'
+    gem 'jekyll-twitter-plugin'
+    gem 'jemoji'
+    gem 'unicode_utils'
+    gem 'webrick'
 end
-
-
- 
+group :other_plugins do
+    gem 'httparty'
+    gem 'feedjira'
+end
